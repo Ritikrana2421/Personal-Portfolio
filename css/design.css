@@ -8,7 +8,7 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'sans-serif';
 }
 
 a{
@@ -31,6 +31,7 @@ li{
 
 nav{
     background-color: #fff;
+    background: linear-gradient(to left , #fff7f7, #afb7ef9c );
     position: sticky;
     top: 0;
     padding: 0 85px;
@@ -67,19 +68,19 @@ footer .top ul{
 }
 
 nav button{
-    color: #1c1e53;
-    background-color: transparent;
+    color: #ffffff;
+    background-color: #5e3bee;
     padding: 12px 16px;
     border-radius: 5px;
-    border: 1px solid #1c1e53;
+    border: 1px solid #ffffff;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 nav button:hover{
-    background-color: #5e3bee;
+    background-color: #ffffff;
     border-color: #5e3bee;
-    color: #fff;
+    color: #1c1e53;;
 }
 
 nav button#menuButton{
@@ -92,6 +93,7 @@ nav button#menuButton{
 
 .main{
     background-color: #deebee;
+    background: linear-gradient(to left , #ded1d1, #455eff9c );
     padding: 90px 85px;
     display: flex;
     align-items: center;
@@ -123,12 +125,19 @@ nav button#menuButton{
 
 .main .left button{
     margin-top: 40px;
-    color: #fff;
+    color: #5e3bee;
     cursor: pointer;
-    background-color: #5e3bee;
+    background-color: #ffffff;
     padding: 14px 24px;
-    border: 1px solid transparent;
+    border: 1px solid #5e3bee;
     border-radius: 5px;
+}
+
+.main .left button:hover{
+    background-color: #5e3bee;
+    border: 1px solid #ffffff69;
+    color: #dedede;
+    transition: all 0.3s ease;
 }
 
 .main .right img{
@@ -142,7 +151,7 @@ nav button#menuButton{
 
 }
 .skills h3,
-.about .right h3, 
+.about .right h3,
 .portfolio .header h3,
 .feedback h3{
     font-size: 40px;
@@ -190,6 +199,7 @@ nav button#menuButton{
 
 .about{
     background-color: #deebee;
+    background: linear-gradient(to left , #c5f1ce, #d8dcf59c );
     padding: 90px 85px;
     display: flex;
     align-items: center;
@@ -197,16 +207,19 @@ nav button#menuButton{
     gap: 60px;
 }
 
+#my{
+    height: 80vh;
+    border-radius: 5px;
+}
+
 .about .left{
     background-color: #deebee;
     border-radius: 10px 0 0;
-    
-
 }
 
 .about.left img{
     width: 440px;
-} 
+}
 
 .about .right p{
     font-size: 16px;
@@ -215,6 +228,7 @@ nav button#menuButton{
 
 .portfolio{
     background-color: #dedede;
+    background: linear-gradient(to left , #ded1d1, #455eff9c );
     padding: 110px 85px;
 }
 
@@ -282,25 +296,25 @@ nav button#menuButton{
 }
 
 .portfolio .portfo-items .item .info p{
- font-size: 13px;
+    font-size: 13px;
 }
 
 .portfolio .portfo-items .item .info a i{
     margin-left: 2px;
     font-size: 16px;
-
-
 }
+
 .feedback{
     padding: 110px 85px;
 }
- 
+
 .feedback .customers{
     margin-top: 50px;
     display: flex;
     gap: 40px;
 }
- .feedback .customers .item{
+
+.feedback .customers .item{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -309,15 +323,16 @@ nav button#menuButton{
     padding: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
- }
+}
 
- .feedback .customers .item .rating{
+.feedback .customers .item .rating{
     color: #006b6a;
     font-size: 22px;
 }
 
 .feedback .customers .item:hover{
     background-color: #5e3bee;
+    background: linear-gradient(to right , #c9caea, #aa95facf);
 }
 
 .feedback .customers .item .user{
@@ -332,7 +347,6 @@ nav button#menuButton{
     object-fit: cover;
     border-radius: 50%;
 }
- 
 .feedback .customers .item .user h5{
     font-size: 13px;
     font-weight: 500;
@@ -346,6 +360,7 @@ nav button#menuButton{
 footer{
     padding: 85px;
     background-color: #deebee;
+    background: linear-gradient(to right, #fff7f7, #afb7ef9c );
     display: flex;
     flex-direction: column;
 }
@@ -380,7 +395,6 @@ footer .bottom .links a{
 
 }
 @media screen and (max-width: 1200px) {
-    
     .main .left h5{
         font-size: 18px;
     }
@@ -437,7 +451,6 @@ footer .bottom .links a{
 }
 
 @media screen and (max-width: 992px) {
-    
     nav button{
         display: none;
     }
@@ -486,7 +499,6 @@ footer .bottom .links a{
 }
 
 @media screen and (max-width: 768px) {
-    
     nav{
         justify-content: space-between;
         padding: 0 42px;
@@ -548,7 +560,6 @@ footer .bottom .links a{
 }
 
 @media screen and (max-width: 576px) {
-    
     nav ul li a{
         font-size: 13px;
     }
